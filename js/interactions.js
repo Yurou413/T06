@@ -67,9 +67,11 @@ const createTooltip = () => {
         .text("NA")
         .attr("x", tooltipWidth/2)
         .attr("y", tooltipHeight/2 + 2)
+        .attr("text-anchor", "middle")
         .attr("alignment-baseline", "middle")
         .attr("fill", "white")
-        .style("font-weight", 900);
+        .style("font-weight", 600)
+        .style("font-size", "12px");
 
 };
 
