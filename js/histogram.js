@@ -9,8 +9,6 @@ const drawHistogram = (data) => {
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
     // Step 6.2 Set up bins
-    // First, in shared-constants.js, create a bin generator using d3.bin
-    // Second, Generate the bins
     const bins = binGenerator(data); // Save the bins into an array
 
     console.log(bins); // Log the bins to the console for debugging
@@ -41,7 +39,7 @@ const drawHistogram = (data) => {
             .attr("height", d => innerHeight - yScale(d.length))
             .attr("fill", barColor)
             .attr("stroke", bodyBackgroundColor) // Set the stroke color gives appearance of the gap
-            .attr("stroke-width", 2);
+            .attr("stroke-width", 4);
 
     // Step 6.5 Add axes
     const bottomAxis = d3.axisBottom(xScale)
