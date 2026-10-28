@@ -88,8 +88,4 @@ const drawScatterplot = (data) => {
          .attr('class', 'axis-label');
     });
 
-    /// Add a legend on the right-hand side
-
-    // Show each screen technology with its matching point colour.
-
 };
