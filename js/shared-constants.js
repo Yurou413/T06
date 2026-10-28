@@ -34,6 +34,3 @@ const filterOptions = [
     { id: "OLED", label: "OLED", isActive: false },
 ];
 
-// T06-2 Step 1.4 Set up shared constant
-
-// T06-2 Step 3.3 Add tooltipWidth and tooltipHeight
