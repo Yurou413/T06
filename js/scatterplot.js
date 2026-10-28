@@ -11,7 +11,7 @@ const drawScatterplot = (data) => {
 
     // T06-2 Step 2.3
     /// Set up x and y scales using data extents
-    const xExtent = d3.extent(data, d => d.star);
+    const xExtent = d3.extent(data, d => d.star); // Return minimum and maximum values.
     const yExtent = d3.extent(data, d => d.screenSize);
 
     const xScaleS = d3.scaleLinear()
@@ -53,7 +53,7 @@ const drawScatterplot = (data) => {
         .call(bottomAxis);
 
     svg.append("text")
-        .text("Start Rating")
+        .text("Star Rating")
         .attr("text-anchor", "end")
         .attr("x", width - 20)
         .attr("y", height - 5)
